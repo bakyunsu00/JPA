@@ -22,9 +22,9 @@ public class MemberService {
 //    }
 
     @Transactional
-    public Long Join(Member member){
-        memberRepository.save(member);
+    public Long join(Member member){
         vaildateDuplicateMember(member);
+        memberRepository.save(member);
         return member.getId();
     }
 
@@ -40,5 +40,7 @@ public class MemberService {
         return members;
 
     }
+
+
 
 }
