@@ -7,6 +7,7 @@ import com.example.demo.execptions.NotEnoughStockExecption;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "dtype")
 @Getter
+@Setter
 public abstract class Item {
 
 
@@ -42,6 +44,9 @@ public abstract class Item {
             this.stockQuantity = restQuantity;
         }
     }
+
+
+
 
 
 

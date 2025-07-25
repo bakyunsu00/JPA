@@ -21,6 +21,12 @@ public class Delivery {
     private Address address;
     private DeliveryStatus deliveryStatus;
 
+    protected void setOrder(Order order){
+        this.order = order;
+    }
+
+    protected void setDeliveryStatus(DeliveryStatus deliveryStatus){ this.deliveryStatus = deliveryStatus;}
+
 
 
 
