@@ -94,3 +94,7 @@ test-output/
 *.swo
 *.bak
 *.tmp
+
+gradlew
+gradlew.bat
+.gitignore
